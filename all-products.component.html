@@ -1,0 +1,13 @@
+
+<table *ngFor="let item of getAllProducts()">
+    <tr>
+        <td> <img src="{{item.imageName}}"/>   </td>
+        <td> {{item.productName}} </td>
+        <td> {{item.productCost}} </td>
+        <td> {{item.rating}} </td>
+        <td> {{item.description}} </td>
+        <td> <button (click)="addToCart()">Add To Cart</button> </td>  
+        
+    </tr>
+</table>
+
